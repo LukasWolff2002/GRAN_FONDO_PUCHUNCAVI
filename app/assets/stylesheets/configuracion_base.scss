@@ -33,6 +33,14 @@ body {
   letter-spacing: 0.35rem; /* Espaciado amplio */
 }
 
+/* DIN Condensed con versalitas */
+.font-din-condensed-small-caps {
+  font-family: 'DIN Condensed', sans-serif;
+  font-weight: bold;
+  font-variant: small-caps; /* Versalitas */
+  letter-spacing: 0.35rem; /* Espaciado normal */
+}
+
 /* Clases de utilidad para colores */
 .text-primary {
   color: var(--primary-color);
