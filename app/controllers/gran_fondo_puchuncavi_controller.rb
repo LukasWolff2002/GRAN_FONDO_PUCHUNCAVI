@@ -1,4 +1,4 @@
-class GranFondoPuchuncaviController < ActionController::Base
+class GranFondoPuchuncaviController < ApplicationController
 
     def home
     end
