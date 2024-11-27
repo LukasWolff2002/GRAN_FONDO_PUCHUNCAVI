@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/home', to: 'gran_fondo_puchuncavi#home' 
   get '/guide', to: 'gran_fondo_puchuncavi#guide' 
+  get '/nuestra_historia', to: 'gran_fondo_puchuncavi#nuestra_historia' 
+  get '/contacto', to: 'gran_fondo_puchuncavi#contacto' 
 
   root 'gran_fondo_puchuncavi#home'
 end

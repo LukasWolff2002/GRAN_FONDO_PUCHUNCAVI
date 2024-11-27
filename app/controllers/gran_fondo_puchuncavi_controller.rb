@@ -6,4 +6,10 @@ class GranFondoPuchuncaviController < ApplicationController
     def guide
     end
 
+    def nuestra_historia
+    end
+
+    def contacto
+    end
+
 end

@@ -1,0 +1,38 @@
+/* General styles */
+body
+  
+  /* Circle container */
+  .circle-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+  }
+  
+  .circle-background {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+  
+    /* Adjust circles */
+    .circle-container {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .circle-container img {
+      width: 150px;
+      height: 100px;
+    }
+  
+  }
+  
