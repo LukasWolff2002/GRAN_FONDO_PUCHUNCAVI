@@ -4,7 +4,8 @@
 //= link jumbotron.css
 //= link home/portada.css
 //= link home/texto.css
-//= link la_carrera/texto.css
+//= link la_carrera/texto_grande.css
+//= link la_carrera/leyenda_altimetria.css
 //= link nuestra_historia/portada.css
 //= link nuestra_historia/municipalidad.css
 //= link nuestra_historia/slogan_puchuncavi.css

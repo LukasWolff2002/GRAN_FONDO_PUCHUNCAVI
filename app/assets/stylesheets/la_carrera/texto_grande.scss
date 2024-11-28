@@ -1,0 +1,52 @@
+/* Contenedor del texto */
+.text-container-grande {
+  display: flex; /* Asegura centrado flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 2rem; /* Espaciado interno */
+  background-color: var(--white-color); /* Fondo blanco o color personalizado */
+}
+
+/* Estilo del texto */
+.text-content-grande {
+  color: var(--primary-color); /* Color definido como primario */
+  text-align: center; /* Texto centrado */
+  font-family: 'DIN Condensed', sans-serif; /* Tipografía personalizada */
+  font-size: 5rem; /* Tamaño de fuente base */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  max-width: 800px; /* Ancho máximo del texto */
+  margin: 0; /* Elimina cualquier margen vertical u horizontal */
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+  .text-content-grande {
+    font-size: 3rem; /* Reduce el tamaño de fuente */
+    margin: -1rem; /* Asegura que no haya margen */
+  }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-content-grande {
+    font-size: 4rem; /* Tamaño intermedio para tablets */
+    margin: 0; /* Asegura que no haya margen */
+  }
+}
+
+/* Ajustes para pantallas grandes (desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .text-content-grande {
+    font-size: 5rem; /* Tamaño base para pantallas grandes */
+    margin: 0; /* Asegura que no haya margen */
+  }
+}
+
+/* Ajustes para pantallas extra grandes (4K) */
+@media (min-width: 1441px) {
+  .text-content-grande {
+    font-size: 6rem; /* Tamaño más grande para pantallas grandes */
+    margin: 0; /* Asegura que no haya margen */
+  }
+}

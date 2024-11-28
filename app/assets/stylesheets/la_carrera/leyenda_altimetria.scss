@@ -1,0 +1,53 @@
+/* Contenedor de la imagen */
+.image-container {
+    display: flex; /* Para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    padding: 1rem; /* Espaciado opcional alrededor de la imagen */
+    overflow: hidden; /* Asegura que no haya contenido desbordado */
+    box-shadow: none; /* Elimina cualquier sombra */
+  }
+  
+  /* Imagen responsive */
+  .responsive-image {
+    width: 70rem; /* Tamaño base de la imagen */
+    height: auto; /* Mantiene las proporciones originales */
+    display: block; /* Elimina el espacio extra que algunos navegadores aplican */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: none; /* Garantiza que no haya sombras en la imagen */
+  }
+  
+  /* Pantallas pequeñas (teléfonos) */
+  @media (max-width: 768px) {
+    .responsive-image {
+      width: 20rem; /* La imagen ocupa el 90% del ancho del contenedor */
+      margin-top: -1.5rem;
+      border-radius: 5px; /* Bordes redondeados más sutiles */
+    }
+  }
+  
+  /* Pantallas medianas (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .responsive-image {
+      width: 30rem; /* Ancho más ajustado para tablets */
+      border-radius: 8px; /* Ajuste intermedio para bordes */
+    }
+  }
+  
+  /* Pantallas grandes (desktops estándar) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .responsive-image {
+      width: 40rem; /* Tamaño base de la imagen */
+      border-radius: 10px; /* Bordes redondeados estándar */
+    }
+  }
+  
+  /* Pantallas extra grandes (4K o más) */
+  @media (min-width: 1441px) {
+    .responsive-image {
+      width: 50rem; /* Imagen más grande para pantallas grandes */
+      border-radius: 12px; /* Bordes ligeramente más marcados */
+    }
+  }
+  
