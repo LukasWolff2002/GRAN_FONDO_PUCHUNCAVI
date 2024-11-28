@@ -39,9 +39,8 @@
     align-items: center;
     width: 100px; /* Ancho fijo para el contenedor */
     height: 100px; /* Altura fija para el contenedor */
-    background-color: var(--white-color); /* Fondo blanco detrás del logo */
+    background-color: var(--primary-color); /* Fondo blanco detrás del logo */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     overflow: hidden; /* Recorta el contenido que sobresalga */
   }
   

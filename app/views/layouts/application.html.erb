@@ -12,6 +12,7 @@
   <!-- Rails CSS -->
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "application/navbar"%>
+  <link rel="icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
 </head>
 
 
@@ -27,6 +28,9 @@
         </li>
         <li style="margin-right: 1.5rem;">
           <a href="/nuestra_historia">Historia</a>
+        </li>
+        <li style="margin-right: 1.5rem;">
+          <a href="/la_carrera">La Carrera</a>
         </li>
         <li>
           <a href="/contacto">Contacto</a>
@@ -48,13 +52,13 @@
       <!-- Correo Electrónico -->
       <div class="col-md-4 mb-3">
         <h5 style="font-size: 1.5rem; font-weight: bold; letter-spacing: 0.1rem;">Correo Electrónico</h5>
-        <p style="font-size: 1.1rem;"><a href="mailto:info@lasamiguis.com" style="color: var(--white-color); text-decoration: underline;">info@lasamiguis.com</a></p>
+        <p style="font-size: 1.1rem;"><a href="mailto:gfpuchuncavi@gmail.com" style="color: var(--white-color); text-decoration: underline;">gfpuchuncavi@gmail.com</a></p>
       </div>
       
       <!-- Redes Sociales -->
       <div class="col-md-4 mb-3">
         <h5 style="font-size: 1.5rem; font-weight: bold; letter-spacing: 0.1rem;">Síguenos</h5>
-        <a href="https://www.instagram.com/las_amiguis_gourmet/" target="_blank" style="color: var(--white-color); text-decoration: none; font-size: 1.1rem;">
+        <a href="https://www.instagram.com/gfpuchuncavi/" target="_blank" style="color: var(--white-color); text-decoration: none; font-size: 1.1rem;">
           <i class="bi bi-instagram" style="font-size: 1.5rem; margin-right: 10px;"></i> Instagram
         </a>
       </div>
@@ -62,7 +66,7 @@
     
     <!-- Derechos de autor -->
     <div class="mt-3">
-      <p style="margin: 0; font-size: 1rem; letter-spacing: 0.05rem;">© <%= Time.now.year %> Las Amiguis, productos gourmet.</p>
+      <p style="margin: 0; font-size: 1rem; letter-spacing: 0.05rem;">© <%= Time.now.year %> Gran Fondo Puchuncavi</p>
     </div>
   </div>
 </footer>

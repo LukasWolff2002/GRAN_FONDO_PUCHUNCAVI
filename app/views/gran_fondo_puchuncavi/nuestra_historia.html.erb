@@ -1,6 +1,8 @@
 <%= stylesheet_link_tag 'configuracion_base' %>
 <%= stylesheet_link_tag 'jumbotron' %>
 <%= stylesheet_link_tag 'nuestra_historia/portada' %>
+<%= stylesheet_link_tag 'nuestra_historia/municipalidad'%>
+<%= stylesheet_link_tag 'nuestra_historia/slogan_puchuncavi'%>
 <%= stylesheet_link_tag 'circulos' %>
 
 <div class="jumbotron text-white" 
@@ -25,4 +27,31 @@
       <p class="font-din-condensed subtitle" style="color: var(--tertiary-color)">Con grandes objetivos</p>
     </div>
   </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row mt-4">
+    <!-- Contenido principal con texto -->
+    <div class="col-md-8 d-flex align-items-center">
+      <div class="card p-4" style="border: none; box-shadow: none; border-radius: 0;">
+        <p class="font-din-condensed" style="font-size: 1.2rem; color: var(--primary-color);">
+          Estamos felices de contar con el apoyo de la Municipalidad de Puchuncaví, quienes han sido un pilar fundamental en la organización de este evento. Esto nos permite no solo generar un mejor evento para ustedes, sino que podemos contar con mejores medidas de seguridad y logística. Además, buscamos incentivar el deporte en la zona, la cual es muy rica en su biodiversidad y paisajes, lo cual es ideal para la práctica de deportes al aire libre.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contenedor con imagen -->
+    <div class="col-md-4 d-none d-md-flex align-items-center">
+      <img 
+        src="<%= asset_path('logo_municipalidad.jpg') %>" 
+        alt="Imagen decorativa" 
+        class="img-fluid rounded" 
+        style="height: auto; max-height: 80%; width: auto; object-fit: cover; border: none;"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container contenedor-numeros">
+  <div class="fondo-frase font-din-condensed-small-caps">donde el campo se junta con el mar</div>
 </div>

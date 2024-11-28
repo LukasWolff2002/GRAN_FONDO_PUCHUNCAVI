@@ -3,6 +3,8 @@
 <%= stylesheet_link_tag 'home/portada' %>
 <%= stylesheet_link_tag 'home/countdown' %>
 <%= stylesheet_link_tag 'home/carrusel' %>
+<%= stylesheet_link_tag 'home/distancia_1' %>
+<%= stylesheet_link_tag 'home/texto' %>
 <%= stylesheet_link_tag 'circulos' %>
 <%= stylesheet_link_tag 'home/auspiciadores' %>
 
@@ -54,34 +56,49 @@
   </div>
 </div>
 
+<div class="text-container">
+  <p class="text-content">
+    Buscamos generar un evento para todas las edades y niveles, donde nuestro principal objetivo es generar un momento único para la comunidad ciclista.
+  </p>
+</div>
 
 
-<div class="container marketing">
-
-  <!-- Row for circles -->
-  <div class="row d-flex justify-content-center text-center">
-    <div class="d-flex justify-content-center">
-      <!-- Circle with background image -->
-      <div class="circle-container">
-        <div class="circle-background" style="background-image: url('<%= asset_path('home/kilometraje_1.png') %>');"></div>
-        <img class="rounded-circle" width="200" height="200">
+<div class="container contenedor-numeros" >
+  <div class="fondo-frase font-din-condensed-wide">El gran desafío</div>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Número grande -->
+      <div class="mb-3">
+        <p class="numero-grande">150 Kms</p>
       </div>
 
-      <!-- Circle with background image -->
-      <div class="circle-container">
-        <div class="circle-background" style="background-image: url('<%= asset_path('home/kilometraje_1.png') %>');"></div>
-        <img class="rounded-circle" width="140" height="140">
+      <!-- Texto secundario -->
+      <div class="mb-3">
+        <p class="texto-secundario">2.000 m de ascenso</p>
       </div>
-    </div>
-  </div>
-
-  <!-- Single text centered below -->
-  <div class="row text-center mt-4">
-    <div class="col-12">
-      <p class="font-din-condensed description">La distancia principal consta de x kilometros con x metros de ascenso. Un desa</p>
     </div>
   </div>
 </div>
+
+<div class="container contenedor-numeros" >
+  <div class="fondo-frase font-din-condensed-wide">Para todos</div>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Número grande -->
+      <div class="mb-3">
+        <p class="numero-grande">70 Kms</p>
+      </div>
+
+      <!-- Texto secundario -->
+      <div class="mb-3">
+        <p class="texto-secundario">1.000 m de ascenso</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <div class="sponsors-container">
   <!-- Título de auspiciadores -->
@@ -113,8 +130,6 @@
   
   </div>
 </div>
-
-
 
 
 

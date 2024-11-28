@@ -1,0 +1,21 @@
+/* Contenedor del texto */
+.text-container {
+    display: flex; /* Asegura centrado flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 2rem; /* Espaciado interno */
+    background-color: var(--white-color); /* Fondo blanco o color personalizado */
+  }
+  
+  /* Estilo del texto */
+  .text-content {
+    color: var(--primary-color); /* Color definido como primario */
+    text-align: center; /* Texto centrado */
+    font-family: 'DIN Condensed', sans-serif; /* Tipografía personalizada */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    max-width: 800px; /* Ancho máximo del texto */
+    margin: 0 auto; /* Centrado automático en el contenedor */
+  }
+  

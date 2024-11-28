@@ -9,6 +9,9 @@ class GranFondoPuchuncaviController < ApplicationController
     def nuestra_historia
     end
 
+    def la_carrera
+    end
+
     def contacto
         @comment = Comment.new
     end

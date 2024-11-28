@@ -3,9 +3,14 @@
 //= link configuracion_base.css
 //= link jumbotron.css
 //= link home/portada.css
+//= link home/texto.css
+//= link la_carrera/texto.css
 //= link nuestra_historia/portada.css
+//= link nuestra_historia/municipalidad.css
+//= link nuestra_historia/slogan_puchuncavi.css
 //= link circulos.css
 //= link home/countdown.css
+//= link home/distancia_1.css
 //= link application/navbar.css
 //= link contacto/form.css
 //= link home/auspiciadores.css

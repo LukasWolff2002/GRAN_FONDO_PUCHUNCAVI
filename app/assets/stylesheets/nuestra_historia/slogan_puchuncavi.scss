@@ -1,0 +1,39 @@
+/* Contenedor principal */
+.contenedor-numeros {
+  position: relative; /* Asegura que la frase de fondo se posicione respecto a este contenedor */
+  padding: 2rem; /* Espaciado interno, puedes ajustarlo según sea necesario */
+  width: 100%;
+  height: auto; /* Deja que el contenedor crezca en altura según el contenido */
+}
+
+/* Frase de fondo */
+.contenedor-numeros .fondo-frase {
+  position: absolute; /* Se posiciona absolutamente dentro del contenedor */
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste final para centrarla perfectamente */
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1); /* Color con transparencia */
+  z-index: 1; /* Aparece detrás de otros elementos */
+  white-space: nowrap; /* Evita que la frase se parta en varias líneas */
+  pointer-events: none; /* Evita interferencia con la interacción del usuario */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-numeros .fondo-frase {
+    top: -10%; /* Mueve la frase un poco más arriba en pantallas pequeñas */
+    font-size: 1rem; /* Tamaño más pequeño en teléfonos */
+  }
+}
+
+/* Media query para pantallas tipo iPad (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contenedor-numeros .fondo-frase {
+    top: 45%; /* Ajuste de la posición */
+    font-size: 3rem; /* Tamaño intermedio para tablets */
+  }
+}
+
+  
