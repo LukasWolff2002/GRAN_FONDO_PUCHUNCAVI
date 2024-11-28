@@ -9,4 +9,5 @@
 //= link application/navbar.css
 //= link contacto/form.css
 //= link home/auspiciadores.css
+//= link home/carrusel.css
 //= link_tree ../fonts
