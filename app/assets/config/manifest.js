@@ -5,3 +5,7 @@
 //= link home/portada.css
 //= link nuestra_historia/portada.css
 //= link circulos.css
+//= link home/countdown.css
+//= link application/navbar.css
+//= link contacto/form.css
+//= link_tree ../fonts

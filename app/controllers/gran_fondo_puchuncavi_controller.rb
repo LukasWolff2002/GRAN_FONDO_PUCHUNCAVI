@@ -10,6 +10,7 @@ class GranFondoPuchuncaviController < ApplicationController
     end
 
     def contacto
+        @comment = Comment.new
     end
 
 end

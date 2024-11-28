@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('/assets/fonts/DS-DIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+/* Contenedor principal */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espaciado entre elementos */
+    font-family: 'DIN Condensed', sans-serif;
+    margin: 2rem 0;
+  }
+  
+  /* Cada bloque de la cuenta regresiva */
+  .countdown-item {
+    text-align: center;
+  }
+  
+  /* Estilo de los números */
+  .countdown-number {
+    font-family: 'DS-Digital', monospace;
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+  /* Estilo de los textos descriptivos */
+  .countdown-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--secondary-color); /* Color complementario */
+  }
+  

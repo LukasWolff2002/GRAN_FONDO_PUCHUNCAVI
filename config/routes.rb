@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   get '/contacto', to: 'gran_fondo_puchuncavi#contacto' 
 
   root 'gran_fondo_puchuncavi#home'
+
+  resources :comments, only: [:create]
 end

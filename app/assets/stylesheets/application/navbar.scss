@@ -1,0 +1,62 @@
+/* Base Navbar */
+nav {
+    padding: 1rem 2rem; /* Tamaño base del padding */
+    font-family: 'DIN Condensed', sans-serif; /* Mantén la fuente consistente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Base para enlaces */
+  nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem; /* Tamaño base del texto */
+  }
+  
+  /* Responsive styles */
+  
+  /* Small screens (phones, max-width: 768px) */
+  @media (max-width: 768px) {
+    nav {
+      padding: 0.8rem 1rem; /* Reduce el alto del navbar */
+    }
+  
+    nav a {
+      font-size: 0.9rem; /* Texto más pequeño */
+    }
+  }
+  
+  /* Medium screens (tablets, min-width: 768px and max-width: 992px) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    nav {
+      padding: 1rem 1.5rem; /* Tamaño moderado */
+    }
+  
+    nav a {
+      font-size: 1rem; /* Tamaño estándar */
+    }
+  }
+  
+  /* Large screens (desktops, min-width: 992px and max-width: 1200px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    nav {
+      padding: 1.2rem 2rem; /* Navbar ligeramente más alto */
+    }
+  
+    nav a {
+      font-size: 1.2rem; /* Texto más grande */
+    }
+  }
+  
+  /* Extra large screens (large desktops, min-width: 1200px) */
+  @media (min-width: 1200px) {
+    nav {
+      padding: 1.5rem 3rem; /* Navbar más grande */
+    }
+  
+    nav a {
+      font-size: 1.4rem; /* Texto más grande */
+    }
+  }
+  

@@ -1,38 +1,88 @@
-/* General styles */
-body
-  
-  /* Circle container */
-  .circle-container {
+.circle-container {
     position: relative;
     width: 140px;
     height: 140px;
   }
   
   .circle-background {
-    background-size: cover;
-    background-position: center;
+    background-size: 150%; /* Ajusta el zoom, aumenta o reduce este valor */
+    background-position: center center; /* Cambia la posición de la imagen */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 75%;
     border-radius: 50%;
     z-index: 1;
   }
   
   /* Responsive styles */
+  
+  /* Small screens (phones, max-width: 768px) */
   @media (max-width: 768px) {
-  
-    /* Adjust circles */
     .circle-container {
-      width: 200px;
-      height: 200px;
-    }
-  
-    .circle-container img {
-      width: 150px;
+      width: 100px;
       height: 100px;
     }
   
+    .circle-container img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .d-flex {
+      gap: 6rem; /* Espaciado reducido entre círculos */
+    }
+  }
+  
+  /* Medium screens (tablets, min-width: 768px and max-width: 992px) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .circle-container {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .circle-container img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .d-flex {
+      gap: 12rem; /* Espaciado moderado entre círculos */
+    }
+  }
+  
+  /* Large screens (desktops, min-width: 992px and max-width: 1200px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .circle-container {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .circle-container img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .d-flex {
+      gap: 14rem; /* Espaciado amplio entre círculos */
+    }
+  }
+  
+  /* Extra large screens (large desktops, min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .circle-container {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .circle-container img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .d-flex {
+      gap: 18rem; /* Espaciado muy amplio entre círculos */
+    }
   }
   
