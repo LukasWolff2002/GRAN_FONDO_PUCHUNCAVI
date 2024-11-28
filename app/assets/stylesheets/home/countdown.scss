@@ -41,4 +41,25 @@
     font-weight: normal;
     color: var(--secondary-color); /* Color complementario */
   }
+
+
+/* Responsive styles */
+
+/* Para pantallas pequeñas (teléfonos, max-width: 768px) */
+@media (max-width: 768px) {
+    .countdown-container {
+      gap: 1rem; /* Reduce el espacio entre elementos */
+      flex-wrap: wrap; /* Asegura que los elementos se reacomoden en filas */
+    }
+  
+    .countdown-number {
+      font-size: 2.5rem; /* Reduce el tamaño de los números */
+      padding: 0.4rem 0.8rem; /* Ajusta el padding */
+      max-width: 100px; /* Reduce el ancho máximo */
+    }
+  
+    .countdown-label {
+      font-size: 0.9rem; /* Texto más pequeño */
+    }
+  }
   

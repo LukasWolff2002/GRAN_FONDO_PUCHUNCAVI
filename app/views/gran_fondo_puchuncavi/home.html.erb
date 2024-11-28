@@ -3,6 +3,7 @@
 <%= stylesheet_link_tag 'home/portada' %>
 <%= stylesheet_link_tag 'home/countdown' %>
 <%= stylesheet_link_tag 'circulos' %>
+<%= stylesheet_link_tag 'home/auspiciadores' %>
 
 
 <div class="jumbotron text-white" 
@@ -80,6 +81,24 @@
     </div>
   </div>
 </div>
+
+<div class="sponsors-container">
+  <!-- Título de auspiciadores -->
+  <div class="sponsors-title">
+    <h2 class="font-din-condensed-small-caps" style="margin: 0;">auspiciadores</h2>
+  </div>
+
+  <!-- Contenedor de logos -->
+  <div class="sponsors-wrapper">
+    <% 10.times do %>
+      <div class="sponsor-item">
+        <img src="<%= asset_path('logo.png') %>" alt="Auspiciador" class="sponsor-logo">
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
 
 
 
