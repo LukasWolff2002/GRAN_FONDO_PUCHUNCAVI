@@ -1,0 +1,110 @@
+/* Contenedor principal */
+.save-the-date-container {
+    display: flex; /* Asegura un diseño flexible */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 16rem; /* Altura inicial */
+    background-color: var(--primary-color); /* Fondo del color primario */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilo del título */
+  .save-the-date-title {
+    font-family: 'DIN Condensed', sans-serif; /* Tipografía personalizada */
+    font-size: 5rem; /* Tamaño del título */
+    color: var(--white-color); /* Texto blanco */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 0.5rem; /* Espaciado entre letras */
+    margin-top: -4rem; /* Ajuste de márgenes */
+  }
+  
+  /* Estilo de la fecha */
+  .save-the-date-date {
+    font-family: 'DS-Digital', monospace; /* Tipografía estilo digital */
+    font-size: 3rem; /* Tamaño de la fecha */
+    color: var(--secondary-color); /* Color complementario */
+    margin-top: -3rem; /* Espaciado con respecto al título */
+    margin-bottom: -4rem; /* Ajuste inferior */
+  }
+  
+  /* Responsive Styles */
+  
+  /* Pantallas pequeñas (teléfonos) */
+  @media (max-width: 768px) {
+    .save-the-date-container {
+      height: 9rem; /* Menor altura para pantallas pequeñas */
+      padding: 1rem; /* Menor padding */
+    }
+  
+    .save-the-date-title {
+      font-size: 2rem; /* Reduce el tamaño del título */
+      margin-top: -4rem; /* Ajuste del margen superior */
+    }
+  
+    .save-the-date-date {
+      font-size: 1.5rem; /* Reduce el tamaño de la fecha */
+      margin-top: -1rem; /* Ajuste del espaciado superior */
+      margin-bottom: -rem; /* Ajuste del espaciado inferior */
+    }
+  }
+  
+  /* Pantallas medianas (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .save-the-date-container {
+      height: 15rem; /* Ajusta la altura */
+      padding: 1.5rem; /* Ajuste de padding */
+    }
+  
+    .save-the-date-title {
+      font-size: 4rem; /* Tamaño intermedio para tablets */
+      margin-top: -3rem; /* Ajuste del margen superior */
+    }
+  
+    .save-the-date-date {
+      font-size: 2.5rem; /* Tamaño intermedio para tablets */
+      margin-top: -2rem; /* Ajuste del espaciado superior */
+      margin-bottom: -3rem; /* Ajuste del espaciado inferior */
+    }
+  }
+  
+  /* Pantallas grandes (desktops) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .save-the-date-container {
+      height: 16rem; /* Altura estándar */
+      padding: 2rem; /* Padding estándar */
+    }
+  
+    .save-the-date-title {
+      font-size: 5rem; /* Tamaño estándar */
+      margin-top: -4rem;
+    }
+  
+    .save-the-date-date {
+      font-size: 3rem; /* Tamaño estándar */
+      margin-top: -3rem;
+      margin-bottom: -4rem;
+    }
+  }
+  
+  /* Pantallas extra grandes (4K o más) */
+  @media (min-width: 1441px) {
+    .save-the-date-container {
+      height: 18rem; /* Altura adicional para pantallas grandes */
+      padding: 3rem; /* Más espacio interno */
+    }
+  
+    .save-the-date-title {
+      font-size: 6rem; /* Mayor tamaño del título */
+      margin-top: -5rem;
+    }
+  
+    .save-the-date-date {
+      font-size: 4rem; /* Mayor tamaño de la fecha */
+      margin-top: -4rem;
+      margin-bottom: -5rem;
+    }
+  }
+  

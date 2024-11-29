@@ -4,7 +4,10 @@
 //= link jumbotron.css
 //= link home/portada.css
 //= link home/texto.css
+//= link home/save_the_date.css
 //= link la_carrera/texto_grande.css
+//= link la_carrera/categorias.css
+//= link la_carrera/estadisticas.css
 //= link la_carrera/leyenda_altimetria.css
 //= link nuestra_historia/portada.css
 //= link nuestra_historia/municipalidad.css

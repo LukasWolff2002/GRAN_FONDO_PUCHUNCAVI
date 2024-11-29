@@ -38,7 +38,7 @@
   /* Pantallas grandes (desktops estándar) */
   @media (min-width: 1025px) and (max-width: 1440px) {
     .responsive-image {
-      width: 40rem; /* Tamaño base de la imagen */
+      width: 30rem; /* Tamaño base de la imagen */
       border-radius: 10px; /* Bordes redondeados estándar */
     }
   }
@@ -46,7 +46,7 @@
   /* Pantallas extra grandes (4K o más) */
   @media (min-width: 1441px) {
     .responsive-image {
-      width: 50rem; /* Imagen más grande para pantallas grandes */
+      width: 30rem; /* Imagen más grande para pantallas grandes */
       border-radius: 12px; /* Bordes ligeramente más marcados */
     }
   }

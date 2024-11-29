@@ -4,6 +4,8 @@
 <%= stylesheet_link_tag 'circulos' %>
 <%= stylesheet_link_tag 'contacto/form'%>
 <%= stylesheet_link_tag 'la_carrera/texto_grande' %>
+<%= stylesheet_link_tag 'la_carrera/estadisticas' %>
+<%= stylesheet_link_tag 'la_carrera/categorias' %>
 <%= stylesheet_link_tag 'la_carrera/leyenda_altimetria' %>
 
 <div class="jumbotron text-white" 
@@ -30,22 +32,50 @@
   </div>
 </div>
 
-<div class="text-container-grande">
-  <p class="text-content-grande">
-    Cuesta La Canela
-  </p>
+<p>Aqui va el recorrido</p>
+
+<div class="save-the-date-container">
+  <p class="save-the-date-title font-din-condensed-small-caps">Cuesta La Canela</p>
+  <p class="save-the-date-date font-din-condensed">15.12 km, 755 m desnivel, 4.0% pendiente promedio</p>
 </div>
 
 <div class="image-container">
   <img src="<%= asset_path('carrera/RutaOF.png') %>" alt="Descripción de la imagen" class="responsive-image">
 </div>
 
-<div class="text-container-grande">
-  <p class="text-content-grande">
-    Tramo final
-  </p>
+<div class="save-the-date-container">
+  <p class="save-the-date-title font-din-condensed-small-caps">Tramo Final</p>
+  <p class="save-the-date-date font-din-condensed">4.96 km, 425 m desnivel, 8.3% pendiente promedio</p>
 </div>
 
 <div class="image-container">
   <img src="<%= asset_path('carrera/RutaOF2.png') %>" alt="Descripción de la imagen" class="responsive-image">
+</div>
+
+<div class="categories-container">
+  <div class="categories-wrapper">
+    <!-- Categorías para hombres -->
+    <div class="category-group">
+      <h3 class="category-title">Hombres</h3>
+      <ul class="category-list">
+        <li class="category-item">18-29 años</li>
+        <li class="category-item">30-39 años</li>
+        <li class="category-item">40-49 años</li>
+        <li class="category-item">50-59 años</li>
+        <li class="category-item">60 años y más</li>
+      </ul>
+    </div>
+
+    <!-- Categorías para mujeres -->
+    <div class="category-group">
+      <h3 class="category-title">Mujeres</h3>
+      <ul class="category-list">
+        <li class="category-item">18-29 años</li>
+        <li class="category-item">30-39 años</li>
+        <li class="category-item">40-49 años</li>
+        <li class="category-item">50-59 años</li>
+        <li class="category-item">60 años y más</li>
+      </ul>
+    </div>
+  </div>
 </div>
