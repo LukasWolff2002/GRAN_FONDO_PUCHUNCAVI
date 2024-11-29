@@ -1,0 +1,52 @@
+/* Contenedor principal */
+.race-bases-container {
+    background-color: var(--white-color); /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Título principal */
+  .race-bases-title {
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  /* Wrapper de secciones */
+  .race-bases-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Títulos de secciones */
+  .section-title {
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Contenido de secciones */
+  .section-content {
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Lista de elementos */
+  .section-list {
+    list-style-type: disc;
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+  }
+  
+  /* Enlaces */
+  .link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
