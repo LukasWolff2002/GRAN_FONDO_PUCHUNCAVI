@@ -13,6 +13,8 @@
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "application/navbar"%>
   <link rel="icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoSJuvSWfENxFG6mrD4T-vPtK_giKsGA4"></script>
+
 </head>
 
 
@@ -39,7 +41,7 @@
     </nav>
     <%= yield %>
 
-  <footer style="background-color: var(--primary-color); color: var(--white-color); font-family: 'DIN Condensed', sans-serif; padding: 20px; margin-top: 20px; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);">
+  <footer style="background-color: var(--primary-color); color: var(--white-color); font-family: 'DIN Condensed', sans-serif; padding: 20px; margin-top: 0px; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);">
   <div class="container text-center">
     <div class="row">
       <!-- Contacto -->

@@ -7,6 +7,7 @@
 <%= stylesheet_link_tag 'la_carrera/estadisticas' %>
 <%= stylesheet_link_tag 'la_carrera/categorias' %>
 <%= stylesheet_link_tag 'la_carrera/bases' %>
+<%= stylesheet_link_tag 'la_carrera/mapa' %>
 <%= stylesheet_link_tag 'la_carrera/leyenda_altimetria' %>
 
 <div class="jumbotron text-white" 
@@ -33,7 +34,9 @@
   </div>
 </div>
 
-<p>Aqui va el recorrido</p>
+<div id="mapa" class="map-container">
+  <div id="map"></div>
+</div>
 
 <div class="save-the-date-container">
   <p class="save-the-date-title font-din-condensed-small-caps">Cuesta La Canela</p>
@@ -53,37 +56,47 @@
   <img src="<%= asset_path('carrera/RutaOF2.png') %>" alt="Descripción de la imagen" class="responsive-image">
 </div>
 
-<div class="categories-container">
-  <div class="categories-wrapper">
-    <!-- Categorías para hombres -->
-    <div class="category-group">
-      <h3 class="category-title">Hombres</h3>
-      <ul class="category-list">
-        <li class="category-item">18-29 años</li>
-        <li class="category-item">30-39 años</li>
-        <li class="category-item">40-49 años</li>
-        <li class="category-item">50-59 años</li>
-        <li class="category-item">60 años y más</li>
-      </ul>
-    </div>
-
-    <!-- Categorías para mujeres -->
-    <div class="category-group">
-      <h3 class="category-title">Mujeres</h3>
-      <ul class="category-list">
-        <li class="category-item">18-29 años</li>
-        <li class="category-item">30-39 años</li>
-        <li class="category-item">40-49 años</li>
-        <li class="category-item">50-59 años</li>
-        <li class="category-item">60 años y más</li>
-      </ul>
-    </div>
-  </div>
+<div id="bases" class="save-the-date-container">
+  <p class="save-the-date-title font-din-condensed-small-caps">Bases</p>
+  <p class="save-the-date-date font-din-condensed">Debes leer esta seccion previo a participar</p>
 </div>
 
+
 <div class="race-bases-container">
-  <h2 class="race-bases-title">Bases de la Carrera</h2>
   <div class="race-bases-wrapper">
+
+    <!-- Categorías -->
+    <div class="race-section">
+      <h3 class="section-title">Categorias</h3>
+      <div class="categories-container">
+        <div class="categories-wrapper">
+          <!-- Categorías para hombres -->
+          <div class="category-group">
+            <h3 class="category-title">Hombres</h3>
+            <ul class="category-list">
+              <li class="category-item">18-29 años</li>
+              <li class="category-item">30-39 años</li>
+              <li class="category-item">40-49 años</li>
+              <li class="category-item">50-59 años</li>
+              <li class="category-item">60 años y más</li>
+            </ul>
+          </div>
+
+          <!-- Categorías para mujeres -->
+          <div class="category-group">
+            <h3 class="category-title">Mujeres</h3>
+            <ul class="category-list">
+              <li class="category-item">18-29 años</li>
+              <li class="category-item">30-39 años</li>
+              <li class="category-item">40-49 años</li>
+              <li class="category-item">50-59 años</li>
+              <li class="category-item">60 años y más</li>
+            </ul>
+          </div>
+        </div>
+</div>
+
+    </div>
     <!-- Programa -->
     <div class="race-section">
       <h3 class="section-title">Programa</h3>
@@ -145,3 +158,30 @@
     </div>
   </div>
 </div>
+
+<script>
+  // Inicialización del mapa
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById('map'), {
+      center: { lat: -33.4728, lng: -70.6298 }, // Coordenadas iniciales (ajústalas si es necesario)
+      zoom: 12, // Nivel de zoom inicial
+    });
+
+    // Cargar el archivo KMZ
+    const kmzLayer = new google.maps.KmlLayer({
+      url: 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml', // Sustituye por la URL directa de tu archivo KMZ
+      map: map,
+      preserveViewport: true,
+    });
+
+    // Manejo de errores
+    kmzLayer.addListener('status_changed', () => {
+      if (kmzLayer.getStatus() !== google.maps.KmlLayerStatus.OK) {
+        console.error('Error al cargar el archivo KMZ:', kmzLayer.getStatus());
+      }
+    });
+  }
+
+  // Llamar a la inicialización cuando la página esté cargada
+  window.onload = initMap;
+</script>
