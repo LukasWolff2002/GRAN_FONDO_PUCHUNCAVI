@@ -15,7 +15,7 @@
   .save-the-date-title {
     font-family: 'DIN Condensed', sans-serif; /* Tipografía personalizada */
     font-size: 5rem; /* Tamaño del título */
-    color: var(--white-color); /* Texto blanco */
+    color: var(--tertiary-color); /* Texto blanco */
     text-transform: uppercase; /* Texto en mayúsculas */
     letter-spacing: 0.5rem; /* Espaciado entre letras */
     margin-top: -4rem; /* Ajuste de márgenes */
@@ -25,7 +25,7 @@
   .save-the-date-date {
     font-family: 'DS-Digital', monospace; /* Tipografía estilo digital */
     font-size: 3rem; /* Tamaño de la fecha */
-    color: var(--secondary-color); /* Color complementario */
+    color: var(--white-color); /* Color complementario */
     margin-top: -3rem; /* Espaciado con respecto al título */
     margin-bottom: -4rem; /* Ajuste inferior */
   }
