@@ -38,13 +38,59 @@
     box-shadow: none;
 }
 
-/* Contenedor de la imagen */
+/* Contenedor general */
+.container .row {
+    display: flex; /* Usa Flexbox */
+    flex-wrap: nowrap; /* Asegura que los elementos estén en una sola línea */
+    gap: 0rem; /* Espaciado entre elementos */
+}
+
+/* Contenedor de texto (con imagen) */
+.container .col-md-8 {
+    flex: 1 1 auto; /* Toma el espacio disponible */
+    padding: 1rem; /* Espaciado interno */
+}
+
+/* Contenedor de imagen */
+.container .col-md-4 {
+    flex: 0 0 40%; /* La imagen ocupa el 40% del ancho */
+    display: flex; /* Asegura el alineamiento de la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.container {
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
+/* Estilo de la imagen */
 .image-container {
     background-image: url('<%= asset_path("home/portada.JPG") %>'); /* Ruta de la imagen */
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     border-radius: 10px; /* Bordes redondeados */
-    height: 40%; /* Toma todo el alto del contenedor */
-    width: 40%; /* Asegura que ocupe todo el ancho */
+    height: auto; /* Ajusta la altura de la imagen al contenido */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* Caso sin imagen: texto ocupa todo el ancho */
+.container.no-image .col-md-8 {
+    flex: 1 1 100%; /* Texto ocupa todo el ancho */
+}
+
+.container.no-image .col-md-4 {
+    display: none; /* Oculta el contenedor de la imagen */
+}
+
+/* Estilo del texto */
+.card p {
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    color: var(--primary-color); /* Color primario */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0; /* Elimina márgenes innecesarios */
+    text-align: justify; /* Justifica el texto */
+}
+
+@media (max-width: 768px) {
+
 }

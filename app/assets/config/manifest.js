@@ -15,6 +15,7 @@
 //= link nuestra_historia/portada.css
 //= link nuestra_historia/municipalidad.css
 //= link nuestra_historia/slogan_puchuncavi.css
+//= link nuestra_historia/texto.css
 //= link circulos.css
 //= link home/countdown.css
 //= link home/distancia_1.css

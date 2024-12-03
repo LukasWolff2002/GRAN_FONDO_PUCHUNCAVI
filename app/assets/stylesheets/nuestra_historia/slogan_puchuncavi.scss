@@ -20,11 +20,18 @@
   pointer-events: none; /* Evita interferencia con la interacción del usuario */
 }
 
+.texto-centrado {
+  text-align: center; /* Centra horizontalmente */
+  margin: 0 auto; /* Asegura un centrado visual */
+  display: block; /* Asegura que se comporte correctamente en línea */
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .contenedor-numeros .fondo-frase {
-    top: -10%; /* Mueve la frase un poco más arriba en pantallas pequeñas */
-    font-size: 1rem; /* Tamaño más pequeño en teléfonos */
+    top: 1rem; /* Mueve la frase un poco más arriba en pantallas pequeñas */
+    bottom: -1rem;
+    font-size: 2.5rem; /* Tamaño más pequeño en teléfonos */
   }
 }
 
