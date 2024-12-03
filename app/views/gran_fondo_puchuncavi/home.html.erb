@@ -123,13 +123,14 @@
 
   <!-- Contenedor de logos -->
   <div class="sponsors-wrapper">
-    <% 10.times do %>
+    <% @sponsors.each do |sponsor| %>
       <div class="sponsor-item">
-        <img src="<%= asset_path('logo.png') %>" alt="Auspiciador" class="sponsor-logo">
+        <img src="<%= asset_path(sponsor) %>" alt="Auspiciador" class="sponsor-logo">
       </div>
     <% end %>
   </div>
 </div>
+
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
