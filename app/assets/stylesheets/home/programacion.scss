@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+  
+.heading-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.heading-section h3 {
+    font-size: 2.5rem;
+    color: #333; /* Color principal */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+  
+.heading-section::after {
+    content: "";
+    display: block;
+    font-size: 1.2rem;
+    color: #c00; /* Color rojo */
+    margin: 0.5rem auto 0;
+}
+  
+/* Schedule Container */
+.schedule {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+  
+/* Schedule Day */
+.schedule-day {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color); /* Rojo destacado */
+    font-weight: bold;
+    text-align: center;
+}
+  
+.schedule-day hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem auto;
+    width: 60%; /* Línea más corta */
+}
+  
+/* Schedule Rows */
+.schedule-row {
+    display: grid;
+    grid-template-columns: 150px 10px auto; /* Horario, línea roja, descripción */
+    align-items: center;
+    gap: 1rem; /* Espaciado entre columnas */
+    padding: 1rem 6rem;
+    margin-bottom: 0.5rem;
+}
+  
+.schedule-row time {
+    font-size: 1.2rem;
+    color: var(--secondary-color); /* Rojo destacado */
+    font-weight: bold;
+    text-align: right;
+}
+  
+.schedule-row .line {
+    border-left: 3px solid var(--tertiary-color); /* Línea roja vertical */
+    height: 100%;
+}
+  
+.schedule-row h5 {
+    font-size: 1.3rem;
+    color: #333; /* Texto principal */
+    font-weight: bold;
+    margin: 0;
+}
+  
+.schedule-row p {
+    margin: 0.2rem 0 0;
+    font-size: 1rem;
+    color: #666; /* Gris tenue */
+}
+  
+/* Responsiveness */
+@media (max-width: 768px) {
+    .schedule {
+        padding: 0 1rem; /* Reducir el espacio horizontal en teléfonos */
+    }
+
+    .schedule-row {
+        grid-template-columns: 150px 10px auto; /* Mantén el formato de las columnas */
+        padding: 1rem 1rem; /* Reduce el padding horizontal */
+    }
+
+    .schedule-day {
+        font-size: 1.2rem; /* Reducir tamaño de fuente para los días */
+    }
+
+    .schedule-row time {
+        font-size: 1rem; /* Reducir tamaño de fuente para los horarios */
+    }
+
+    .schedule-row h5 {
+        font-size: 1.1rem; /* Reducir tamaño de fuente para las descripciones */
+    }
+
+    .schedule-row p {
+        font-size: 0.9rem; /* Reducir tamaño de fuente para los textos adicionales */
+    }
+}

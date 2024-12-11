@@ -18,4 +18,20 @@
     max-width: 800px; /* Ancho máximo del texto */
     margin: 0 auto; /* Centrado automático en el contenedor */
   }
+
+@media (max-width: 768px) {
+  
+    .text-content {
+      font-size: 1rem; /* Tamaño de fuente reducido */
+    }
+}  
+
+@media (max-width: 1024) {
+
+    .text-content {
+      font-size: 1.2rem; /* Tamaño de fuente reducido */
+    }
+}
+  
+
   
