@@ -1,0 +1,75 @@
+/* Contenedor principal */
+.produccion-container {
+    background-color: var(--primary-color); /* Color primario */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    margin: 2rem auto; /* Centrado horizontal con espacio superior/inferior */
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+  }
+  
+  /* Estilo del texto */
+  .produccion-text {
+    font-size: 90px; /* Tamaño base del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: var(--tertiary-color); /* Color terciario */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    margin-bottom: 1rem; /* Espacio entre el texto y la imagen */
+  }
+  
+  /* Estilo de la imagen */
+  .produccion-logo {
+    width: 25rem; /* Tamaño base del ancho de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: -9rem auto; /* Centra la imagen horizontalmente */
+  }
+  
+  /* Pantallas pequeñas (teléfonos) */
+  @media (max-width: 768px) {
+    .produccion-text {
+      font-size: 40px; /* Reduce el tamaño del texto */
+      margin-bottom: 0.5rem; /* Ajusta el margen inferior */
+    }
+  
+    .produccion-logo {
+      width: 15rem; /* Reduce el tamaño de la imagen */
+      margin: -6rem auto; /* Ajusta la posición vertical */
+    }
+  }
+  
+  /* Pantallas medianas (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .produccion-text {
+      font-size: 60px; /* Tamaño intermedio del texto */
+      margin-bottom: 1rem; /* Ajusta el margen inferior */
+    }
+  
+    .produccion-logo {
+      width: 20rem; /* Ajusta el tamaño de la imagen */
+      margin: -7rem auto; /* Ajusta la posición vertical */
+    }
+  }
+  
+  /* Pantallas grandes (desktops estándar) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .produccion-text {
+      font-size: 80px; /* Reduce ligeramente el tamaño del texto */
+    }
+  
+    .produccion-logo {
+      width: 22rem; /* Ajusta el tamaño de la imagen */
+      margin: -8rem auto; /* Ajusta la posición vertical */
+    }
+  }
+  
+  /* Pantallas extra grandes (4K o más) */
+  @media (min-width: 1441px) {
+    .produccion-text {
+      font-size: 90px; /* Tamaño completo del texto */
+    }
+  
+    .produccion-logo {
+      width: 25rem; /* Tamaño completo de la imagen */
+      margin: -9rem auto; /* Posición base de la imagen */
+    }
+  }

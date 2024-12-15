@@ -10,7 +10,7 @@
   /* Frase de fondo */
   .contenedor-numeros .fondo-frase {
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 7rem;
@@ -37,10 +37,11 @@
   
   /* Texto secundario */
   .contenedor-numeros .texto-secundario {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--primary-color);
-    margin-top: -1.5rem;
+    margin-top: -1rem;
+
   }
   
   /* Media query para pantallas pequeñas */
@@ -52,12 +53,12 @@
   
     .contenedor-numeros .texto-secundario {
       font-size: 2rem;
-      margin-top: -2rem;
+      margin-top: -1rem;
       margin-bottom: -2rem;
     }
   
     .contenedor-numeros .fondo-frase {
-      top: 6rem;
+      top: 7rem;
       font-size: 3rem; /* Tamaño más pequeño en teléfonos */
     }
   }
@@ -65,17 +66,34 @@
   /* Media query para pantallas tipo iPad (769px - 1024px) */
   @media (min-width: 769px) and (max-width: 1024px) {
     .contenedor-numeros .numero-grande {
+      font-size: 4rem;
+      margin-top: -2rem;
+    }
+  
+    .contenedor-numeros .texto-secundario {
+      font-size: 2rem;
+      margin-top: -1rem;
+    }
+  
+    .contenedor-numeros .fondo-frase {
+      top: 50%;
+      font-size: 4rem; /* Tamaño intermedio para tablets */
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .contenedor-numeros .numero-grande {
       font-size: 5.5rem;
       margin-top: -2rem;
     }
   
     .contenedor-numeros .texto-secundario {
-      font-size: 3rem;
-      margin-top: -2rem;
+      font-size: 2rem;
+      margin-top: 0rem;
     }
   
     .contenedor-numeros .fondo-frase {
-      top: 45%;
+      top: 55%;
       font-size: 6rem; /* Tamaño intermedio para tablets */
     }
   }

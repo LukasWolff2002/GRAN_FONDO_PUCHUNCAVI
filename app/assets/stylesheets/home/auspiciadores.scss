@@ -37,8 +37,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px; /* Ancho fijo para el contenedor */
-    height: 120px; /* Altura fija para el contenedor */
+    width: 160px; /* Ancho fijo para el contenedor */
+    height: 160px; /* Altura fija para el contenedor */
     background-color: var(--primary-color); /* Fondo blanco detrás del logo */
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Recorta el contenido que sobresalga */
@@ -55,6 +55,11 @@
 @media (max-width: 768px) {
     .sponsors-wrapper {
       padding: 0 1.5rem; /* Márgenes más pequeños en pantallas pequeñas */
+    }
+
+    .sponsor-item {
+      width: 100px; /* Ancho más pequeño para pantallas pequeñas */
+      height: 100px; /* Altura más pequeña para pantallas pequeñas */
     }
   }
   

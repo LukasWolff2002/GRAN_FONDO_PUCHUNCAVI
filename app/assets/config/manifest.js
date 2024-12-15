@@ -7,6 +7,8 @@
 //= link home/save_the_date.css
 //= link home/boton_redirigir.css
 //= link home/programacion.css
+//= link home/carrousel.css
+//= link home/una_produccion_de.css
 //= link la_carrera/texto_grande.css
 //= link la_carrera/bases.css
 //= link la_carrera/mapa.css

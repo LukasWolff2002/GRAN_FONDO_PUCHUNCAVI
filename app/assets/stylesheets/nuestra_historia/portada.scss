@@ -1,3 +1,15 @@
+
+/* Estilos para la jumbotron */
+.jumbotron {
+  background-image: url('/assets/background.jpg'); /* Cambia 'background.jpg' por el nombre de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda el área */
+  background-position: center; /* Centra la imagen */
+  color: var(--text-color); /* Usa el color de texto definido */
+  padding: 3rem 2rem; /* Espaciado interno */
+  border-radius: 0rem; /* Bordes redondeados */
+  height: 30rem;
+}
+
 /* Small screens (phones, max-width: 768px) */
 @media (max-width: 768px) {
 
