@@ -18,7 +18,7 @@
             linear-gradient(to bottom, var(--white-color), rgba(0, 0, 0, 0.01), rgba(10, 46, 61, 0)),
             url('<%= asset_path('home/portada_2.jpg') %>'); 
             background-size: cover; 
-            background-position: center 10%; /* Ajusta la posición vertical de la imagen */ 
+            background-position: center 10%; 
             background-repeat: no-repeat; 
             position: relative;">
   
@@ -59,17 +59,17 @@
 </div>
 
 <div class="text-container">
-  <p class="text-content"  style="text-align: left;">
+  <p class="text-content" style="text-align: left;">
     Buscamos generar un evento para todas las edades y niveles, donde nuestro principal objetivo es crear un momento único para la comunidad ciclista.
   </p>
 </div>
 
 <div class="save-the-date-container">
   <p class="save-the-date-title font-din-condensed-small-caps">Save the Date</p>
-  <p class="save-the-date-date font-din-condensed-wide">4 de Mayo, 2025</p>
+  <p class="save-the-date-date font-din-condensed-wide">4 de mayo, 2025</p>
 </div>
 
-<div class="container contenedor-numeros" >
+<div class="container contenedor-numeros">
   <div class="fondo-frase font-din-condensed-wide">El gran desafío</div>
   <div class="row justify-content-center">
     <div class="col-md-6">
@@ -77,7 +77,6 @@
       <div class="mb-3">
         <p class="numero-grande">105 Kms</p>
       </div>
-
       <!-- Texto secundario -->
       <div class="mb-3">
         <p class="texto-secundario">1.800 m de ascenso</p>
@@ -86,7 +85,7 @@
   </div>
 </div>
 
-<div class="container contenedor-numeros" >
+<div class="container contenedor-numeros">
   <div class="fondo-frase font-din-condensed-wide">Medio desafío</div>
   <div class="row justify-content-center">
     <div class="col-md-6">
@@ -94,7 +93,6 @@
       <div class="mb-3">
         <p class="numero-grande">80 Kms</p>
       </div>
-
       <!-- Texto secundario -->
       <div class="mb-3">
         <p class="texto-secundario">1.000 m de ascenso</p>
@@ -104,21 +102,21 @@
 </div>
 
 <div class="text-container">
-  <p class="text-content"  style="text-align: left;">
-    El plus de la GFP es su diversidad en el recorrido, se pasa de estar pedaleando a escasos metros del Mar para pasar por la Alta Montaña, y su cercanía con Santiago y Viña del Mar la hacen un clásico del calendario de las Gran Fondo
+  <p class="text-content" style="text-align: left;">
+    El plus de la GFP es la diversidad en su recorrido: se pasa de pedalear a escasos metros del mar a rodar por la alta montaña. Su cercanía con Santiago y Viña del Mar la convierten en un clásico del calendario de las Gran Fondo.
   </p>
 </div>
 
 <a href="/la_carrera#mapa" class="boton-redirigir" style="margin-top: 30px; margin-bottom: 15px;">Recorrido</a>
 <a href="/la_carrera#bases" class="boton-redirigir" style="margin-top: 15px; margin-bottom: 15px">Bases</a>
-<a href="https://resultados.racetiming.cl/tabla.php?codigo=351" class="boton-redirigir" style="margin-top: 15px; margin-bottom: 30px">Resultados edicion anterior</a>
+<a href="https://resultados.racetiming.cl/tabla.php?codigo=351" class="boton-redirigir" style="margin-top: 15px; margin-bottom: 30px">Resultados edición anterior</a>
 
 <div class="produccion-container">
   <p class="produccion-text font-din-condensed-small-caps">una producción de:</p>
   <img src="<%= asset_path('logo_productora_blanco.png') %>" alt="Logo de la Productora" class="produccion-logo">
 </div>
 
-<div class="heading-section" style="">
+<div class="heading-section">
   <h3 style="color: var(--primary-color); padding: 2rem">Programación</h3>
 </div>
 
@@ -159,7 +157,7 @@
     <div class="line"></div>
     <div>
       <h5>Retiro de kits</h5>
-      <p>Plaza de Puchuncavi</p>
+      <p>Plaza de Puchuncaví</p>
     </div>
   </div>
 
@@ -180,7 +178,7 @@
     <time>8:00 - 8:30</time>
     <div class="line"></div>
     <div>
-      <h5>Encajonamiento partida</h5>
+      <h5>Encajonamiento de partida</h5>
       <p>Estadio Municipal Puchuncaví</p>
     </div>
   </div>
@@ -211,7 +209,7 @@
 </div>
 
 <div class="text-container">
-  <p class="text-content"  style="text-align: left;">
+  <p class="text-content" style="text-align: left;">
     NOTA: El cronograma aún se encuentra sujeto a cambios.
   </p>
 </div>
@@ -233,9 +231,9 @@
 </div>
 
 <script>
-  //Reloj
+  // Reloj
   document.addEventListener("DOMContentLoaded", function () {
-    // Fecha objetivo (modifica según tu necesidad)
+    // Fecha objetivo (modificar según necesidad)
     const targetDate = new Date("2025-05-03T23:59:59").getTime();
 
     // Actualización cada segundo

@@ -94,3 +94,16 @@
 .texto-nuestra-historia {
     font-size: 5rem; /* Tamaño de la fuente */
 }
+
+p.font-din-condensed {
+    font-size: 1.5rem; /* Tamaño base en pantallas grandes */
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 600px) {
+    p.font-din-condensed {
+      font-size: 1rem; /* Tamaño reducido en pantallas pequeñas (ej. móviles) */
+      margin-top: 0.5rem;
+    }
+
+  }
