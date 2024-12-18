@@ -2,15 +2,16 @@ class GranFondoPuchuncaviController < ApplicationController
 
     def home
         @sponsors = [
+            'auspiciadores/all4bikers.png',
             'auspiciadores/powerade.png',
             'auspiciadores/cocacola.png',
             'auspiciadores/benedictino.png',
             'auspiciadores/budweiser.png',
             'auspiciadores/teruel.png',
             'auspiciadores/carozzi.png',
-            'auspiciadores/all4bikers.png',
             'auspiciadores/ride_chile.png',
-            'auspiciadores/eventrid.png'
+            'auspiciadores/eventrid.png',
+            'auspiciadores/cabana.png'
             ]
     end
 
