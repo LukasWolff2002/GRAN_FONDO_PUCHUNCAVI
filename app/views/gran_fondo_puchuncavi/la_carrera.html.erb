@@ -283,12 +283,12 @@
       infoWindow.open(map, marker);
     });
 
-    // Cargar el archivo KMZ si es necesario (opcional)
     const kmzLayer = new google.maps.KmlLayer({
-      url: 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml',
-      map: map,
-      preserveViewport: true,
-    });
+  url: 'https://raw.githubusercontent.com/LukasWolff2002/GRAN_FONDO_PUCHUNCAVI/WebPage/app/Gran_Fondo_GFP_2025.kmz',
+  map: map,
+  preserveViewport: true
+});
+
 
     // Manejo de errores al cargar el archivo KMZ
     kmzLayer.addListener('status_changed', () => {
