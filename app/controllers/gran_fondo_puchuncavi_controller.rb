@@ -14,7 +14,9 @@ class GranFondoPuchuncaviController < ApplicationController
             'auspiciadores/carozzi.png',
             'auspiciadores/ride_chile.png',
             'auspiciadores/eventrid.png',
-            'auspiciadores/cabana.png'
+            'auspiciadores/cabana.png',
+            'auspiciadores/ist.png',
+            'auspiciadores/marley.png'
             ]
     end
 
