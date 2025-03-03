@@ -4,6 +4,7 @@ class GranFondoPuchuncaviController < ApplicationController
         @sponsors = [
             'auspiciadores/all4bikers.png',
             'auspiciadores/wahoo.png',
+            'auspiciadores/honey.png',
             'auspiciadores/powerade.png',
             'auspiciadores/cocacola.png',
             'auspiciadores/benedictino.png',
