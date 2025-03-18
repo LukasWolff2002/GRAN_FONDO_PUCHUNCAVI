@@ -20,6 +20,7 @@ class GranFondoPuchuncaviController < ApplicationController
             'auspiciadores/honey.png',
             'auspiciadores/onedrop.png',
             'auspiciadores/vivo.png',
+            'auspiciadores/lbc.png',
  
             ]
     end
