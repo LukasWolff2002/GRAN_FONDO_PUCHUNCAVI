@@ -16,12 +16,12 @@ class GranFondoPuchuncaviController < ApplicationController
             'auspiciadores/eventrid.png',
             'auspiciadores/cabana.png',
             'auspiciadores/ist.png',
+            'auspiciadores/amiguis.png',
             'auspiciadores/marley.png',
             'auspiciadores/honey.png',
             'auspiciadores/onedrop.png',
             'auspiciadores/vivo.png',
             'auspiciadores/lbc.png',
- 
             ]
     end
 
