@@ -4,8 +4,10 @@ class GranFondoPuchuncaviController < ApplicationController
         @sponsors = [
             'auspiciadores/all4bikers.png',
             'auspiciadores/wahoo.png',
+            'auspiciadores/copec.png',
             'auspiciadores/powerade.png',
             'auspiciadores/cocacola.png',
+            'auspiciadores/jumbo.png',
             'auspiciadores/benedictino.png',
             'auspiciadores/budweiser.png',
             'auspiciadores/teruel.png',
@@ -22,6 +24,7 @@ class GranFondoPuchuncaviController < ApplicationController
             'auspiciadores/onedrop.png',
             'auspiciadores/vivo.png',
             'auspiciadores/lbc.png',
+            'auspiciadores/liv.png',
             ]
     end
 
