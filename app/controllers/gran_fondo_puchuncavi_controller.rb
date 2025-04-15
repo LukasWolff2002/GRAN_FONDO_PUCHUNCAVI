@@ -28,6 +28,7 @@ class GranFondoPuchuncaviController < ApplicationController
             'auspiciadores/vivo.png',
             'auspiciadores/lbc.png',
             'auspiciadores/liv.png',
+            'auspiciadores/timing.png',
             ]
     end
 
