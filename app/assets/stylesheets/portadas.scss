@@ -1,0 +1,35 @@
+/* Estilo para el contenedor de imagen */
+.image-container {
+  background-image: url('/assets/background.jpg'); /* Cambia 'background.jpg' por el nombre de tu imagen */
+  background-size: contain; /* Ajusta la imagen para que se vea completamente, sin recortes */
+  background-position: top left; /* Asegura que la esquina superior izquierda siempre sea visible */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%; /* Asegura que el contenedor cubra todo el ancho */
+  
+  /* Relación de aspecto 16:9 (puedes ajustar esto según la relación de la imagen) */
+  padding-bottom: 56.25%; /* 9 / 16 = 0.5625 => 56.25% para mantener la relación 16:9 */
+  height: 0; /* La altura se ajusta usando padding-bottom */
+  
+  position: relative; /* Necesario para el padding-bottom */
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .image-container {
+    padding-bottom: 75%; /* Relación 4:3 para móviles */
+  }
+}
+
+/* Ajuste para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .image-container {
+    padding-bottom: 56.25%; /* Relación 16:9 para tabletas */
+  }
+}
+
+/* Ajuste para pantallas grandes (escritorios y pantallas grandes) */
+@media (min-width: 1024px) {
+  .image-container {
+    padding-bottom: 56.25%; /* Relación 16:9 para pantallas grandes */
+  }
+}

@@ -1,7 +1,7 @@
 //= link_tree ../images
 //= link_tree ../builds
 //= link configuracion_base.css
-//= link jumbotron.css
+//= link portadas.css
 //= link home/portada.css
 //= link home/texto.css
 //= link home/save_the_date.css
